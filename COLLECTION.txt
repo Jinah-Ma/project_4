@@ -166,11 +166,35 @@ copyright © 2023 CHUTZPAH AGENCY Co., ltd.
 who@pah-agency.com
 
 
+-----------메뉴
+Photographer
+KIM, SUNHYE 김선혜
+LEE, EUNBOK 이은복
+LIM, HANSOO 임한수
+OH, JAEKWANG 오재광
+JUNG, JIEUN 정지은
+JO, SUNGHYUN 조성현
+
+Stylist
+KIM, SOORIN 김수린
+PARK, MIKYOUNG 박미경
+JUNG, JANGJO 정장조
+HWANG, GEUMNAM 황금남
+
+Hair Stylist
+LEE, ILJUNG 이일중
+JO, MIYEON 조미연
+KYUNG, MINJUNG 경민정
+
+Make-up Artist
+JUNG, SUYEON 정수연
+SEO, EUNYOUNG 서은영
+OH, SEONGSEOK 오성석
 
 
-
-
-
+Home
+News
+Contact
 
 
 
