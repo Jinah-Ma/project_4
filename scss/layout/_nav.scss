@@ -1,9 +1,125 @@
 nav {
-    display: block !important;
+    display: block;
     width: calc(100% - 10vw);
     height: $height;
-    background-color: $background;
     position: absolute;
     right: 0;
     z-index: 9;
+    user-select: none;
+
+    .menu {
+        display: flex;
+        background-color: $text1;
+        height: $height;
+        width: 100%;
+        position: absolute;
+        right: 0;
+
+        .list {
+            margin: auto 3vw;
+
+            span {
+                cursor: pointer;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            &-Photographer {
+                @extend %listText;
+            }
+
+            &-Stylist {
+                @extend %listText;
+            }
+
+            &-HairStylist {
+                @extend %listText;
+            }
+
+            &-MakeupArtist {
+                @extend %listText;
+            }
+        }
+
+        .nav {
+            background-color: $background;
+            height: $height;
+            width: 30vw;
+            z-index: 10;
+            position: absolute;
+            right: 0;
+
+            .navInner {
+                position: inherit;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 3vw;
+
+                form {
+                    input {
+                        border: none;
+                        border-bottom: 1px solid $text1;
+                        font-size: $info1;
+                        width: 13vw;
+                        padding: 0.5rem;
+                    }
+
+                    i {
+                        font-size: $main2;
+                    }
+                }
+
+                .navText {
+                    padding-top: 2rem;
+
+                    p {
+                        font-weight: 600;
+                        font-size: $main2;
+                    }
+                }
+            }
+        }
+    }
+
+    .ham {
+        position: absolute;
+        right: 3.5vw;
+        @include topTrans();
+        z-index: 20;
+        cursor: pointer;
+
+        span {
+            display: block;
+            width: 1.7rem;
+            border-top: 4px solid $primary;
+            padding-bottom: 0.4rem;
+            position: relative;
+
+            &:first-child.active{
+                position: absolute;
+                top: 0;
+                left: 0.25rem;
+                transform: rotate(-135deg);
+                transition: all 0.2s;
+            }
+
+            &:last-child.active{
+                position: absolute;
+                top: 0;
+                transform: rotate(135deg);
+                transition: all 0.2s;
+            }
+
+            &.sRight.active{
+                border-color: transparent;
+            }
+        }
+
+        &:hover .sRight {
+            position: relative;
+            right: 0.3rem;
+        }
+    }
 }

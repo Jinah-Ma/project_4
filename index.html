@@ -8,6 +8,9 @@
 
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index.css">
+    
+    <script src='https://code.jquery.com/jquery-3.7.1.min.js'></script>
+    <script src="./jquery/jquery.js" defer></script>
 </head>
 
 <body>
@@ -22,45 +25,56 @@
                     <span>OH, JAEKWANG 오재광</span>
                     <span>JUNG, JIEUN 정지은</span>
                     <span>JO, SUNGHYUN 조성현</span>
-                    <!-- </div> //Photographer -->
+                </div> <!-- //Photographer -->
 
-                    <div class="list-Stylist">
-                        <h2>Stylist</h2>
-                        <span>KIM, SOORIN 김수린</span>
-                        <span>PARK, MIKYOUNG 박미경</span>
-                        <span>JUNG, JANGJO 정장조</span>
-                        <span>HWANG, GEUMNAM 황금남</span>
-                    </div> <!-- //Stylist -->
+                <div class="list-Stylist">
+                    <h2>Stylist</h2>
+                    <span>KIM, SOORIN 김수린</span>
+                    <span>PARK, MIKYOUNG 박미경</span>
+                    <span>JUNG, JANGJO 정장조</span>
+                    <span>HWANG, GEUMNAM 황금남</span>
+                </div> <!-- //Stylist -->
 
-                    <div class="list-HairStylist">
-                        <h2>Hair Stylist</h2>
-                        <span>LEE, ILJUNG 이일중</span>
-                        <span>JO, MIYEON 조미연</span>
-                        <span>KYUNG, MINJUNG 경민정</span>
-                    </div> <!-- //HairStylist -->
+                <div class="list-HairStylist">
+                    <h2>Hair Stylist</h2>
+                    <span>LEE, ILJUNG 이일중</span>
+                    <span>JO, MIYEON 조미연</span>
+                    <span>KYUNG, MINJUNG 경민정</span>
+                </div> <!-- //HairStylist -->
 
-                    <div class="list-MakeupArtist">
-                        <h2>Make-up Artist</h2>
-                        <span>JUNG, SUYEON 정수연</span>
-                        <span>SEO, EUNYOUNG 서은영</span>
-                        <span>OH, SEONGSEOK 오성석</span>
-                    </div> <!-- //MakeupArtist -->
-                </div>
-                <!-- //list -->
+                <div class="list-MakeupArtist">
+                    <h2>Make-up Artist</h2>
+                    <span>JUNG, SUYEON 정수연</span>
+                    <span>SEO, EUNYOUNG 서은영</span>
+                    <span>OH, SEONGSEOK 오성석</span>
+                </div> <!-- //MakeupArtist -->
+            </div>
+            <!-- //list -->
 
-                <div class="nav">
+            <div class="nav">
+                <div class="navInner">
                     <form action="get">
                         <label for="search"></label>
-                        <input type="search" id="search" placeholder="search...">
+                        <input type="search" id="search" placeholder="Search...">
                         <i class="fa-solid fa-magnifying-glass" style="color: #333333;"></i>
                     </form>
-                    <p><a href="#">Home</a></p>
-                    <p><a href="#">News</a></p>
-                    <p><a href="#">Contact</a></p>
+                    <div class="navText">
+                        <p><a href="#">Home</a></p>
+                        <p><a href="#">News</a></p>
+                        <p><a href="#">Contact</a></p>
+                    </div>
                 </div>
-                <!-- //nav -->
             </div>
-            <!-- //menu -->
+            <!-- //nav -->
+
+        </div>
+        <!-- //menu -->
+
+        <div class="ham">
+            <span></span>
+            <span class="sRight"></span>
+            <span></span>
+        </div>
     </nav>
     <!-- //nav -->
 
@@ -81,6 +95,14 @@
                 <div class="b-img">
                     <div class="b-img-img">
                         <img src="./img/bannerImg/bannerImg0.jpg" alt="Dear My Frineds">
+                        <img src="./img/bannerImg/bannerImg1.jpg" alt="Dear My Frineds">
+                        <img src="./img/bannerImg/bannerImg2.jpg" alt="Dear My Frineds">
+                        <img src="./img/bannerImg/bannerImg3.jpg" alt="Dear My Frineds">
+                        <img src="./img/bannerImg/bannerImg4.jpg" alt="Dear My Frineds">
+                        <img src="./img/bannerImg/bannerImg5.jpg" alt="Dear My Frineds">
+                        <img src="./img/bannerImg/bannerImg6.jpg" alt="Dear My Frineds">
+                        <img src="./img/bannerImg/bannerImg7.jpg" alt="Dear My Frineds">
+                        <img src="./img/bannerImg/bannerImg8.jpg" alt="Dear My Frineds">
                     </div>
                     <div class="b-img-text">
                         <div class="b-img-text-inner">
@@ -92,9 +114,7 @@
                     </div>
                 </div>
             </div>
-            <div class="right">
-                <span></span>
-            </div>
+            <div class="right"></div>
             <!-- //right -->
         </div>
     </header>

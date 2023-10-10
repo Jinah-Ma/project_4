@@ -8,3 +8,15 @@
         font-size: $info1;
     }
 }
+
+%listText{
+    h2 {
+        font-weight: 600;
+        color: $text2;  
+    }
+    span{
+        color: $background;
+        font-size: $info2;
+        padding-right: 1vw;
+    }
+}
