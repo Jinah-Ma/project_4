@@ -1,7 +1,11 @@
+body{position: relative;}
+
 @import "abstracts/variables";
 @import "abstracts/mixin";
 
 @import "layout/nav";
 @import "layout/header";
+@import "layout/main";
+@import "layout/footer";
 
 @import "base/typo";

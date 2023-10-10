@@ -1,6 +1,7 @@
 header {
     width: 100%;
-
+    height: $height;
+    
     .wrap {
         width: 100%;
         display: flex;
@@ -25,6 +26,20 @@ header {
                     }
                 }
             }
+            .collection{
+                text-align: center;
+                padding-top: 22rem;
+                span:first-child{
+                    font-size: $info2;
+                }
+                span:last-child{
+                    font-size: $info2;
+                    color: $background;
+                    padding: 0.2rem 0.5rem;
+                    background-color: $primary;
+                    border-radius: 100%;
+                }
+            }
         }
 
         .banner {
@@ -40,6 +55,7 @@ header {
                         position: fixed;
                         top: 0;
                         left: 10vw;
+                        z-index: -1;
                     }
 
                     height: 95vh;
@@ -71,6 +87,33 @@ header {
             width: $nav;
             background: $background;
             height: $height;
+
+            span{
+                display: block;
+                width: 1.7rem;
+                border-top: 4px solid $primary;
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%);
+
+                &:before{
+                    content: '';
+                    display: block;
+                    width: 1.7rem;
+                    border-top: 4px solid $primary;
+                    position: absolute;
+                    top: -0.8rem;
+                }
+                &:after{
+                    content: '';
+                    display: block;
+                    width: 1.7rem;
+                    border-top: 4px solid $primary;
+                    position: absolute;
+                    top: 0.35rem;
+                }
+            }
         }
     }
 }

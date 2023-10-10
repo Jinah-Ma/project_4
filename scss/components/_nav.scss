@@ -1,0 +1,10 @@
+nav{
+    display: block !important;
+    width: calc(100%-$nav);
+    height: $height !important;
+    background-color: $background;
+    z-index: 999999;
+    position: relative;
+    left: 0;
+    top: 0;
+}

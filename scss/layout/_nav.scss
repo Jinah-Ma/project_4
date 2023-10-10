@@ -1,3 +1,9 @@
 nav {
-    display: none;
+    display: block !important;
+    width: calc(100% - 10vw);
+    height: $height;
+    background-color: $background;
+    position: absolute;
+    right: 0;
+    z-index: 9;
 }
