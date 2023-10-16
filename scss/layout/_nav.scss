@@ -48,7 +48,7 @@ nav {
             height: $height;
             width: 30vw;
             z-index: 10;
-            position: absolute;
+            position: fixed;
             right: 0;
 
             .navInner {
@@ -84,7 +84,7 @@ nav {
     }
 
     .ham {
-        position: absolute;
+        position: fixed;
         right: 3.5vw;
         @include topTrans();
         z-index: 20;

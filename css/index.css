@@ -35,7 +35,7 @@ nav .menu .nav {
   height: 100vh;
   width: 30vw;
   z-index: 10;
-  position: absolute;
+  position: fixed;
   right: 0;
 }
 nav .menu .nav .navInner {
@@ -62,7 +62,7 @@ nav .menu .nav .navInner .navText p {
   font-size: 1.4rem;
 }
 nav .ham {
-  position: absolute;
+  position: fixed;
   right: 3.5vw;
   top: 50%;
   transform: translate(-50%);
@@ -125,7 +125,7 @@ header .wrap .left .logo h1 {
   margin: auto;
 }
 header .wrap .left .logo h1 img {
-  width: 120px;
+  width: 6.5vw;
 }
 header .wrap .left .collection {
   text-align: center;
@@ -181,21 +181,12 @@ header .wrap .right {
 main {
   width: 100%;
 }
+main .img-hover {
+  display: none;
+}
 main .inner {
   width: 80vw;
-  margin: auto;
-}
-main .inner .section1 {
-  height: 100vh;
-  background-color: azure;
-}
-main .inner .section2 {
-  height: 100vh;
-  background-color: aquamarine;
-}
-main .inner .section3 {
-  height: 100vh;
-  background-color: bisque;
+  margin-left: 10vw;
 }
 main .inner .section4 {
   height: 100vh;
@@ -228,13 +219,13 @@ footer .inner {
   background-color: darkgray;
 }
 
-header .wrap .banner .b-img-text-inner span:not(:last-child) {
+main .inner .section2 .img-text span:not(:last-child), main .inner .section1 .img-text span:not(:last-child), main .inner .section3 .img-text span:not(:last-child), header .wrap .banner .b-img-text-inner span:not(:last-child) {
   font-style: italic;
-  font-size: 0.9rem;
+  font-size: 12px;
 }
-header .wrap .banner .b-img-text-inner span:last-child {
-  font-weight: 500;
-  font-size: 1.1rem;
+main .inner .section2 .img-text span:last-child, main .inner .section1 .img-text span:last-child, main .inner .section3 .img-text span:last-child, header .wrap .banner .b-img-text-inner span:last-child {
+  font-weight: 600;
+  font-size: 14px;
 }
 
 nav .menu .list-Photographer h2, nav .menu .list-Stylist h2, nav .menu .list-HairStylist h2, nav .menu .list-MakeupArtist h2 {
@@ -245,4 +236,47 @@ nav .menu .list-Photographer span, nav .menu .list-Stylist span, nav .menu .list
   color: #fff;
   font-size: 0.9rem;
   padding-right: 1vw;
+}
+
+main .img-hover {
+  text-align: center;
+  line-height: 1.5;
+}
+main .img-hover p:first-child {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+main .img-hover p:last-child {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+main .inner .section1, main .inner .section3 {
+  height: 56vw;
+  background: #fff;
+  display: flex;
+  align-items: flex-end;
+  gap: 1.5vw;
+}
+
+main .inner .section1 img, main .inner .section3 img {
+  width: 39vw;
+}
+main .inner .section1 .img-text, main .inner .section3 .img-text {
+  text-align: center;
+}
+main .inner .section2 {
+  height: 43vw;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(3, 25.3vw);
+  gap: 1.5vw;
+  align-items: flex-end;
+}
+
+main .inner .section2 img {
+  width: 25.3vw;
+}
+main .inner .section2 .img-text {
+  text-align: center;
 }/*# sourceMappingURL=index.css.map */

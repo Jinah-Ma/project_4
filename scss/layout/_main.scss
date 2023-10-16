@@ -1,24 +1,70 @@
-main{
+main {
     width: 100%;
-    .inner{
+
+    .img-hover {
+        @extend %hoverText;
+        display: none;
+    }
+
+    .inner {
         width: $inner;
-        margin: auto;
+        margin-left: 10vw;
 
-        .section1{height: $height; background-color: azure;} //section1
+        .section1 {
+            @extend %section1;
+            @extend %section1Img;
+        }
 
-        .section2{height: $height; background-color: aquamarine;} //section2
+        //section1
 
-        .section3{height: $height; background-color: bisque;} //section3
+        .section2 {
+            @extend %section2;
+            @extend %section2Img;
+        }
 
-        .section4{height: $height; background-color: cadetblue;} //section4
+        //section2
 
-        .section5{height: $height; background-color: chocolate;} //section5
+        .section3 {
+            @extend %section1;
+            @extend %section1Img;
+        }
 
-        .section6{height: $height; background-color: darkcyan;} //section6
+        //section3
 
-        .section7{height: $height; background-color: cornflowerblue;} //section7
+        .section4 {
+            height: $height;
+            background-color: cadetblue;
+        }
 
-        .section8{height: $height; background-color: darkorange;} //section8
+        //section4
+
+        .section5 {
+            height: $height;
+            background-color: chocolate;
+        }
+
+        //section5
+
+        .section6 {
+            height: $height;
+            background-color: darkcyan;
+        }
+
+        //section6
+
+        .section7 {
+            height: $height;
+            background-color: cornflowerblue;
+        }
+
+        //section7
+
+        .section8 {
+            height: $height;
+            background-color: darkorange;
+        }
+
+        //section8
 
     }
 }

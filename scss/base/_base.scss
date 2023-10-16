@@ -1,0 +1,46 @@
+%section1 {
+    height: 56vw;
+    background: $background;
+    display: flex;
+    align-items: flex-end;
+    gap: 1.5vw;
+}
+
+%section1Img {
+    img {
+        width: 39vw;
+    }
+
+    .img-text {
+        text-align: center;
+
+        span {
+            @extend %picSpan;
+        }
+    }
+}
+
+
+
+%section2 {
+    height: 43vw;
+    background-color: $background;
+    display: grid;
+    grid-template-columns: repeat(3, 25.3vw);
+    gap: 1.5vw;
+    align-items: flex-end;
+}
+
+%section2Img {
+    img {
+        width: 25.3vw;
+    }
+
+    .img-text {
+        text-align: center;
+
+        span {
+            @extend %picSpan;
+        }
+    }
+}

@@ -1,11 +1,11 @@
 %picSpan{
     &:not(:last-child) {
         font-style: italic;
-        font-size: $info2;
+        font-size: 12px;
     }
     &:last-child {
-        font-weight: 500;
-        font-size: $info1;
+        font-weight:600;
+        font-size: 14px;
     }
 }
 
@@ -19,4 +19,19 @@
         font-size: $info2;
         padding-right: 1vw;
     }
+}
+
+%hoverText{
+    text-align: center;
+        line-height: 1.5;
+
+        p:first-child {
+            font-size: $info1;
+            font-weight: 600;
+        }
+
+        p:last-child {
+            font-size: $info2;
+            font-weight: 500;
+        }
 }

@@ -1,8 +1,4 @@
-
-
-
-
-
+// 햄버거 메뉴
 $('nav .menu').hide();
 
 let spanF = $('.ham span:first-child');
