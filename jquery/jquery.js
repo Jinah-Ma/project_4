@@ -26,3 +26,12 @@ $('nav .ham').on('click', function () {
     openClose = !openClose;
 })
 
+//이미지 호버
+const img = $('.img');
+
+img.on('mouseenter', function () {
+    $(this).find('.img-hover').fadeIn(400);
+})
+img.on('mouseleave', function () {
+    $(this).find('.img-hover').fadeOut(400);
+})

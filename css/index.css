@@ -1,10 +1,13 @@
 body {
   position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .popup {
   position: fixed;
-  z-index: 10;
+  z-index: 100;
   width: 37rem;
   height: 12rem;
   background: rgba(255, 255, 255, 0.8);
@@ -40,7 +43,7 @@ nav {
   height: 100vh;
   position: absolute;
   right: 0;
-  z-index: 9;
+  z-index: 99;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
@@ -50,8 +53,10 @@ nav .menu {
   background-color: #333;
   height: 100vh;
   width: 100%;
-  position: absolute;
+  position: fixed;
   right: 0;
+  z-index: 30;
+  left: 10vw;
 }
 nav .menu .list {
   margin: auto 3vw;
@@ -66,7 +71,7 @@ nav .menu .nav {
   background-color: #fff;
   height: 100vh;
   width: 30vw;
-  z-index: 90;
+  z-index: 99;
   position: fixed;
   right: 0;
 }
@@ -151,6 +156,7 @@ header .wrap .left .logo {
   width: 165px;
   margin: auto;
   margin-top: calc(50vh - 16px);
+  cursor: pointer;
 }
 header .wrap .left .logo h1 {
   width: 120px;
@@ -162,6 +168,7 @@ header .wrap .left .logo h1 img {
 header .wrap .left .collection {
   text-align: center;
   padding-top: 22rem;
+  cursor: pointer;
 }
 header .wrap .left .collection span:first-child {
   font-size: 0.9rem;
@@ -213,8 +220,40 @@ header .wrap .right {
 main {
   width: 100%;
 }
-main .img-hover {
+main .img {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: inherit;
+  display: block;
+}
+main .img .img-hover {
   display: none;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+main .img .img-hover .img-hover-text p {
+  width: 100%;
+  cursor: pointer;
+  color: #fff;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+main .img .boxS {
+  box-sizing: border-box;
+  overflow: hidden;
+  width: inherit;
+  display: block;
+  height: 100%;
+}
+main .img .boxS img:hover {
+  filter: grayscale(100%) contrast(150%) opacity(60%);
+  transition: all 0.4s ease-out;
+  scale: 120% 120%;
+  cursor: pointer;
 }
 main .inner {
   width: 80vw;
@@ -266,6 +305,7 @@ footer .inner .info:before {
 footer .inner .info span {
   color: #f29833;
   font-weight: 500;
+  cursor: pointer;
 }
 footer .inner .sns {
   display: flex;
@@ -298,15 +338,15 @@ nav .menu .list-Photographer span, nav .menu .list-Stylist span, nav .menu .list
   padding-right: 1vw;
 }
 
-main .img-hover {
+main .img .img-hover {
   text-align: center;
   line-height: 1.5;
 }
-main .img-hover p:first-child {
-  font-size: 1.1rem;
+main .img .img-hover p:first-child {
+  font-size: 1.4rem;
   font-weight: 600;
 }
-main .img-hover p:last-child {
+main .img .img-hover p:last-child {
   font-size: 0.9rem;
   font-weight: 500;
 }
@@ -321,6 +361,7 @@ main .inner .section1, main .inner .section3, main .inner .section5, main .inner
 
 main .inner .section1 img, main .inner .section3 img, main .inner .section5 img, main .inner .section7 img {
   width: 39vw;
+  text-align: center;
 }
 main .inner .section1 .img-text, main .inner .section3 .img-text, main .inner .section5 .img-text, main .inner .section7 .img-text {
   text-align: center;

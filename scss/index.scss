@@ -1,4 +1,4 @@
-body{position: relative;}
+body{position: relative; user-select: none;}
 
 @import "abstracts/variables";
 @import "abstracts/mixin";

@@ -18,6 +18,7 @@ header {
                 width: 165px;
                 margin: auto;
                 margin-top: calc(50vh - 16px);
+                cursor: pointer;
 
                 h1 {
                     width: 120px;
@@ -30,6 +31,7 @@ header {
             .collection{
                 text-align: center;
                 padding-top: 22rem;
+                cursor: pointer;
                 span:first-child{
                     font-size: $info2;
                 }

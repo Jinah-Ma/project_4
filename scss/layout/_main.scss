@@ -1,10 +1,52 @@
 main {
     width: 100%;
 
-    .img-hover {
-        @extend %hoverText;
-        display: none;
+    //이미지 호버
+    .img {
+        position: relative;
+        box-sizing: border-box;
+        overflow: hidden;
+        width: inherit;
+        display: block;
+
+        .img-hover {
+            display: none;
+
+            @extend %hoverText;
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $background;
+
+            .img-hover-text p {
+                width: 100%;
+                cursor: pointer;
+                color: $background;
+                text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+            }
+        }
+
+        .boxS {
+            box-sizing: border-box;
+            overflow: hidden;
+            width: inherit;
+            display: block;
+            height: 100%;
+
+            img:hover {
+                filter: grayscale(100%) contrast(150%) opacity(60%);
+                transition: all 0.4s ease-out;
+                scale: 120% 120%;
+                cursor: pointer;
+            }
+        }
+
+
     }
+
+
 
     .inner {
         width: $inner;
@@ -64,9 +106,10 @@ main {
                             font-style: normal;
                         }
                     }
-                    p{
+
+                    p {
                         font-weight: 600 !important;
-                            font-size: 14px !important;
+                        font-size: 14px !important;
                     }
                 }
             }

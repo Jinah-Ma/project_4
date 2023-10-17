@@ -4,7 +4,7 @@ nav {
     height: $height;
     position: absolute;
     right: 0;
-    z-index: 9;
+    z-index: 99;
     user-select: none;
 
     .menu {
@@ -12,8 +12,10 @@ nav {
         background-color: $text1;
         height: $height;
         width: 100%;
-        position: absolute;
+        position: fixed;
         right: 0;
+        z-index: 30;
+        left: 10vw;
 
         .list {
             margin: auto 3vw;
@@ -47,7 +49,7 @@ nav {
             background-color: $background;
             height: $height;
             width: 30vw;
-            z-index: 90;
+            z-index: 99;
             position: fixed;
             right: 0;
 
