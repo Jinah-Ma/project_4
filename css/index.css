@@ -210,12 +210,11 @@ footer .inner {
   width: 80vw;
   margin: auto;
   margin-left: 10vw;
-  height: 11rem;
+  height: 10rem;
   background-color: #fafafa;
   display: flex;
   justify-content: space-around;
   font-size: 0.9rem;
-  align-items: center;
 }
 footer .inner .copy:before,
 footer .inner .info:before {
@@ -225,7 +224,7 @@ footer .inner .info:before {
   position: relative;
 }
 footer .inner .copy:before {
-  left: 18vw;
+  left: 17vw;
   top: 3rem;
 }
 footer .inner .info:before {
@@ -239,6 +238,9 @@ footer .inner .info span {
 footer .inner .sns {
   display: flex;
   gap: 2rem;
+}
+footer .inner .sns a {
+  margin-top: 3rem;
 }
 footer .inner .sns a img {
   width: 25px;

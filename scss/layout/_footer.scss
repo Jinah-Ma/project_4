@@ -5,14 +5,11 @@ footer {
         width: $inner;
         margin: auto;
         margin-left: 10vw;
-        height: 11rem;
+        height: 10rem;
         background-color: #fafafa;
         display: flex;
         justify-content: space-around;
         font-size: $info2;
-        align-items: center;
-        
-
 
         .copy:before,
         .info:before {
@@ -23,7 +20,7 @@ footer {
         }
 
         .copy:before {
-            left: 18vw;
+            left: 17vw;
             top: 3rem;
         }
 
@@ -43,6 +40,7 @@ footer {
         display: flex;
         gap: 2rem;
         a{
+            margin-top: 3rem;
             img{
                 width: 25px;
                 margin-top: 0.8rem;
