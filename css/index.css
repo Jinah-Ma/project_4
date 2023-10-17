@@ -188,42 +188,68 @@ main .inner {
   width: 80vw;
   margin-left: 10vw;
 }
-main .inner .section4 {
-  height: 100vh;
-  background-color: cadetblue;
+main .inner .section4 .img9 span {
+  display: block;
 }
-main .inner .section5 {
-  height: 100vh;
-  background-color: chocolate;
+main .inner .section6 .img14 .img-text span:nth-child(2) {
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  font-style: normal;
 }
-main .inner .section6 {
-  height: 100vh;
-  background-color: darkcyan;
+main .inner .section6 .img14 .img-text p {
+  font-weight: 600 !important;
+  font-size: 14px !important;
 }
 main .inner .section7 {
-  height: 100vh;
-  background-color: cornflowerblue;
+  height: 60vw !important;
 }
-main .inner .section8 {
-  height: 100vh;
-  background-color: darkorange;
-}
-
 footer {
   width: 100%;
 }
 footer .inner {
   width: 80vw;
   margin: auto;
+  margin-left: 10vw;
   height: 11rem;
-  background-color: darkgray;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.9rem;
+  align-items: center;
+}
+footer .inner .copy:before,
+footer .inner .info:before {
+  content: "";
+  border-left: 1px solid #cccccc;
+  font-size: 1.6rem;
+  position: relative;
+}
+footer .inner .copy:before {
+  left: 18vw;
+  top: 3rem;
+}
+footer .inner .info:before {
+  left: 35vw;
+  top: 3rem;
+}
+footer .inner .info span {
+  color: #f29833;
+  font-weight: 500;
+}
+footer .inner .sns {
+  display: flex;
+  gap: 2rem;
+}
+footer .inner .sns a img {
+  width: 25px;
+  margin-top: 0.8rem;
 }
 
-main .inner .section2 .img-text span:not(:last-child), main .inner .section1 .img-text span:not(:last-child), main .inner .section3 .img-text span:not(:last-child), header .wrap .banner .b-img-text-inner span:not(:last-child) {
+main .inner .section2 .img-text span:not(:last-child), main .inner .section4 .img-text span:not(:last-child), main .inner .section6 .img-text span:not(:last-child), main .inner .section8 .img-text span:not(:last-child), main .inner .section1 .img-text span:not(:last-child), main .inner .section3 .img-text span:not(:last-child), main .inner .section5 .img-text span:not(:last-child), main .inner .section7 .img-text span:not(:last-child), header .wrap .banner .b-img-text-inner span:not(:last-child) {
   font-style: italic;
   font-size: 12px;
 }
-main .inner .section2 .img-text span:last-child, main .inner .section1 .img-text span:last-child, main .inner .section3 .img-text span:last-child, header .wrap .banner .b-img-text-inner span:last-child {
+main .inner .section2 .img-text span:last-child, main .inner .section4 .img-text span:last-child, main .inner .section6 .img-text span:last-child, main .inner .section8 .img-text span:last-child, main .inner .section1 .img-text span:last-child, main .inner .section3 .img-text span:last-child, main .inner .section5 .img-text span:last-child, main .inner .section7 .img-text span:last-child, header .wrap .banner .b-img-text-inner span:last-child {
   font-weight: 600;
   font-size: 14px;
 }
@@ -251,7 +277,7 @@ main .img-hover p:last-child {
   font-weight: 500;
 }
 
-main .inner .section1, main .inner .section3 {
+main .inner .section1, main .inner .section3, main .inner .section5, main .inner .section7 {
   height: 56vw;
   background: #fff;
   display: flex;
@@ -259,13 +285,13 @@ main .inner .section1, main .inner .section3 {
   gap: 1.5vw;
 }
 
-main .inner .section1 img, main .inner .section3 img {
+main .inner .section1 img, main .inner .section3 img, main .inner .section5 img, main .inner .section7 img {
   width: 39vw;
 }
-main .inner .section1 .img-text, main .inner .section3 .img-text {
+main .inner .section1 .img-text, main .inner .section3 .img-text, main .inner .section5 .img-text, main .inner .section7 .img-text {
   text-align: center;
 }
-main .inner .section2 {
+main .inner .section2, main .inner .section4, main .inner .section6, main .inner .section8 {
   height: 43vw;
   background-color: #fff;
   display: grid;
@@ -274,9 +300,9 @@ main .inner .section2 {
   align-items: flex-end;
 }
 
-main .inner .section2 img {
+main .inner .section2 img, main .inner .section4 img, main .inner .section6 img, main .inner .section8 img {
   width: 25.3vw;
 }
-main .inner .section2 .img-text {
+main .inner .section2 .img-text, main .inner .section4 .img-text, main .inner .section6 .img-text, main .inner .section8 .img-text {
   text-align: center;
 }/*# sourceMappingURL=index.css.map */

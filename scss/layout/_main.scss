@@ -32,36 +32,61 @@ main {
         //section3
 
         .section4 {
-            height: $height;
-            background-color: cadetblue;
+            @extend %section2;
+            @extend %section2Img;
+
+            .img9 {
+                span {
+                    display: block;
+                }
+            }
         }
 
         //section4
 
         .section5 {
-            height: $height;
-            background-color: chocolate;
+            @extend %section1;
+            @extend %section1Img;
         }
 
         //section5
 
         .section6 {
-            height: $height;
-            background-color: darkcyan;
+            @extend %section2;
+            @extend %section2Img;
+
+            .img14 {
+                .img-text {
+                    span {
+                        &:nth-child(2) {
+                            font-weight: 600 !important;
+                            font-size: 14px !important;
+                            font-style: normal;
+                        }
+                    }
+                    p{
+                        font-weight: 600 !important;
+                            font-size: 14px !important;
+                    }
+                }
+            }
+
         }
 
         //section6
 
         .section7 {
-            height: $height;
-            background-color: cornflowerblue;
+            @extend %section1;
+            @extend %section1Img;
+
+            height: 60vw !important;
         }
 
         //section7
 
         .section8 {
-            height: $height;
-            background-color: darkorange;
+            @extend %section2;
+            @extend %section2Img;
         }
 
         //section8

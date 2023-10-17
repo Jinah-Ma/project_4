@@ -1,9 +1,53 @@
-footer{
+footer {
     width: 100%;
-    .inner{
+
+    .inner {
         width: $inner;
         margin: auto;
+        margin-left: 10vw;
         height: 11rem;
-        background-color: darkgray;
+        background-color: #fafafa;
+        display: flex;
+        justify-content: space-around;
+        font-size: $info2;
+        align-items: center;
+        
+
+
+        .copy:before,
+        .info:before {
+            content: "";
+            border-left: 1px solid #cccccc;
+            font-size: 1.6rem;
+            position: relative;
+        }
+
+        .copy:before {
+            left: 18vw;
+            top: 3rem;
+        }
+
+        .info:before {
+            left: 35vw;
+            top: 3rem;
+        }
+
+.info{
+    span{
+        color: #f29833;
+        font-weight: 500;
+    }
+}
+
+       .sns{
+        display: flex;
+        gap: 2rem;
+        a{
+            img{
+                width: 25px;
+                margin-top: 0.8rem;
+            }
+        }
+       } 
     }
 }
