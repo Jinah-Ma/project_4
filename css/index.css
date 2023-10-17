@@ -2,6 +2,38 @@ body {
   position: relative;
 }
 
+.popup {
+  position: fixed;
+  z-index: 999;
+  width: 37rem;
+  height: 12rem;
+  background: rgba(255, 255, 255, 0.8);
+  top: 30%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  box-shadow: 0px 0px 5px #888;
+}
+.popup .text {
+  margin-top: 4.5rem;
+}
+.popup .text p {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.popup a {
+  display: block;
+}
+.popup a i {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
 nav {
   display: block;
   width: calc(100% - 10vw);

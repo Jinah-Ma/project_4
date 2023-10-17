@@ -1,3 +1,10 @@
+//팝업
+$('.close').on('click', function (e) {
+    e.preventDefault();
+    $('.popup').hide();
+})
+
+
 // 햄버거 메뉴
 $('nav .menu').hide();
 
@@ -18,3 +25,4 @@ $('nav .ham').on('click', function () {
     }
     openClose = !openClose;
 })
+
