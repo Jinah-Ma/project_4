@@ -1,6 +1,6 @@
 .popup {
     position: fixed;
-    z-index: 999;
+    z-index: 10;
     width: 37rem;
     height: 12rem;
     background: rgba(255, 255, 255, .8);
@@ -11,7 +11,7 @@
     backdrop-filter: blur(20px);
     box-shadow: 0px 0px 5px #888;
 
-    .text {
+    .popText {
         margin-top: 4.5rem;
         p {
             width: 100%;
@@ -24,7 +24,7 @@
     a {
         display: block;
 
-        i {
+        i.fa-regular {
             position: absolute;
             top: 1rem;
             right: 1rem;

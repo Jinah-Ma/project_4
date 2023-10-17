@@ -4,7 +4,7 @@ body {
 
 .popup {
   position: fixed;
-  z-index: 999;
+  z-index: 10;
   width: 37rem;
   height: 12rem;
   background: rgba(255, 255, 255, 0.8);
@@ -16,10 +16,10 @@ body {
           backdrop-filter: blur(20px);
   box-shadow: 0px 0px 5px #888;
 }
-.popup .text {
+.popup .popText {
   margin-top: 4.5rem;
 }
-.popup .text p {
+.popup .popText p {
   width: 100%;
   justify-content: center;
   text-align: center;
@@ -28,7 +28,7 @@ body {
 .popup a {
   display: block;
 }
-.popup a i {
+.popup a i.fa-regular {
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -66,12 +66,12 @@ nav .menu .nav {
   background-color: #fff;
   height: 100vh;
   width: 30vw;
-  z-index: 10;
+  z-index: 90;
   position: fixed;
   right: 0;
 }
 nav .menu .nav .navInner {
-  position: inherit;
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
   left: 3vw;
@@ -83,7 +83,7 @@ nav .menu .nav .navInner form input {
   width: 13vw;
   padding: 0.5rem;
 }
-nav .menu .nav .navInner form i {
+nav .menu .nav .navInner form i.fa-solid {
   font-size: 1.4rem;
 }
 nav .menu .nav .navInner .navText {
@@ -98,7 +98,7 @@ nav .ham {
   right: 3.5vw;
   top: 50%;
   transform: translate(-50%);
-  z-index: 20;
+  z-index: 99;
   cursor: pointer;
 }
 nav .ham span {

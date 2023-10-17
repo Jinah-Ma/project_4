@@ -47,12 +47,12 @@ nav {
             background-color: $background;
             height: $height;
             width: 30vw;
-            z-index: 10;
+            z-index: 90;
             position: fixed;
             right: 0;
 
             .navInner {
-                position: inherit;
+                position: absolute;
                 top: 50%;
                 transform: translateY(-50%);
                 left: 3vw;
@@ -66,7 +66,7 @@ nav {
                         padding: 0.5rem;
                     }
 
-                    i {
+                    i.fa-solid {
                         font-size: $main2;
                     }
                 }
@@ -87,7 +87,7 @@ nav {
         position: fixed;
         right: 3.5vw;
         @include topTrans();
-        z-index: 20;
+        z-index: 99;
         cursor: pointer;
 
         span {
