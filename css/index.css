@@ -250,7 +250,7 @@ main .img .boxS {
   height: 100%;
 }
 main .img .boxS img:hover {
-  filter: grayscale(100%) contrast(150%) opacity(60%);
+  filter: grayscale(100%) brightness(40%);
   transition: all 0.4s ease-out;
   scale: 120% 120%;
   cursor: pointer;
