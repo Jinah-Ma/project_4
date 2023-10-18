@@ -8,3 +8,23 @@
     top: 50%;
     transform: translate(-50%);
 }
+
+@mixin mediaQ ($screen-width) {
+    @if $screen-width == 'ham1' {
+        @media screen and (min-width: 780px) and (max-width: 999px) {
+            @content;
+        }
+    }
+
+    @else if $screen-width == 'ham2' {
+        @media screen and (min-width: 600px) and (max-width: 779px) {
+            @content;
+        }
+    }
+
+    @else if $screen-width == 'ham3' {
+        @media screen and (max-width: 599px) {
+            @content;
+        }
+    }
+}

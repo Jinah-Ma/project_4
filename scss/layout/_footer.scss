@@ -11,42 +11,88 @@ footer {
         justify-content: space-around;
         font-size: $info2;
 
+        @include mediaQ ('ham1') {
+            width: 95%;
+            margin: auto;
+            flex-direction: column;
+            text-align: center;
+            height: 18rem;
+            padding-top: 1rem;
+
+            div{
+                padding-top: 1.5rem;
+            }
+        }
+
         .copy:before,
         .info:before {
             content: "";
             border-left: 1px solid #cccccc;
             font-size: 1.6rem;
             position: relative;
+
+            @include mediaQ ('ham1') {
+                display: block;
+                width: 5rem;
+                border-top: 1px solid #cccccc !important;
+                font-size: 0;
+            }
         }
 
         .copy:before {
             left: 17vw;
             top: 3rem;
+            @include mediaQ ('ham1') {
+                left: 50%;
+                transform: translate(-50%);
+                top: 5.5rem;
+            }
         }
 
         .info:before {
             left: 35vw;
             top: 3rem;
-        }
-
-.info{
-    span{
-        color: #f29833;
-        font-weight: 500;
-        cursor: pointer;
-    }
-}
-
-       .sns{
-        display: flex;
-        gap: 2rem;
-        a{
-            margin-top: 3rem;
-            img{
-                width: 25px;
-                margin-top: 0.8rem;
+            @include mediaQ ('ham1') {
+                left: 50%;
+                transform: translate(-50%);
+                top: 5.8rem;
             }
         }
-       } 
+
+        .info {
+            span {
+                color: #f29833;
+                font-weight: 500;
+                cursor: pointer;
+            }
+        }
+
+        .sns {
+            display: flex;
+            gap: 2rem;
+
+            a {
+                margin-top: 3rem;
+
+                img {
+                    width: 25px;
+                    margin-top: 0.8rem;
+                }
+            }
+
+            @include mediaQ ('ham1') {
+                margin: auto;
+                
+                a{
+                    font-size: $info1;
+                    margin-top: 0;
+
+                    img{
+                        width: 20px;
+                        margin-top: 0.4rem;
+                    }
+                }
+            }
+        }
     }
 }

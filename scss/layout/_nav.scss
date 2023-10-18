@@ -7,6 +7,13 @@ nav {
     z-index: 99;
     user-select: none;
 
+    @include mediaQ ('ham1') {
+        width: 100% !important;
+    }
+    @include mediaQ ('ham2') {
+        width: 100% !important;
+    }
+
     .menu {
         display: flex;
         background-color: $text1;
@@ -17,8 +24,27 @@ nav {
         z-index: 30;
         left: 10vw;
 
+        @include mediaQ ('ham1') {
+            left: 0;
+            top: 60px;
+        }
+        @include mediaQ ('ham2') {
+            left: 0;
+            top: 60px;
+        }
+
+
         .list {
             margin: auto 3vw;
+            width: 55%;
+
+            @include mediaQ ('ham1') {
+                width: 100%;
+            }
+            @include mediaQ ('ham2') {
+                width: 100%;
+            }
+
 
             span {
                 cursor: pointer;
@@ -50,8 +76,41 @@ nav {
             height: $height;
             width: 30vw;
             z-index: 99;
-            position: fixed;
+            position: absolute;
             right: 0;
+
+            @include mediaQ ('ham1') {
+                background: none;
+                width: 100%;
+                top: 60px;
+
+                form {
+                    display: none;
+                }
+
+                a {
+                    color: $background;
+                    font-size: $info1;
+                    font-weight: 500;
+                }
+            }
+
+            @include mediaQ ('ham2') {
+                background: none;
+                width: 100%;
+                top: 60px;
+
+                form {
+                    display: none;
+                }
+
+                a {
+                    color: $background;
+                    font-size: $info1;
+                    font-weight: 500;
+                }
+            }
+
 
             .navInner {
                 position: absolute;
@@ -73,6 +132,19 @@ nav {
                     }
                 }
 
+                @include mediaQ ('ham1') {
+                   top: 0;
+                   left: 50%;
+                   transform: translateX(-50%);
+                   
+                }
+                @include mediaQ ('ham2') {
+                   top: 0;
+                   left: 50%;
+                   transform: translateX(-50%);
+                   
+                }
+                
                 .navText {
                     padding-top: 2rem;
 
@@ -80,6 +152,16 @@ nav {
                         font-weight: 600;
                         font-size: $main2;
                     }
+
+                    @include mediaQ ('ham1') {
+                        display: flex;
+                        gap: 2rem;
+                    }
+                    @include mediaQ ('ham2') {
+                        display: flex;
+                        gap: 2rem;
+                    }
+
                 }
             }
         }
@@ -92,6 +174,15 @@ nav {
         z-index: 99;
         cursor: pointer;
 
+        @include mediaQ ('ham1') {
+            top: 1.2rem;
+            right: 0.7rem;
+        }
+        @include mediaQ ('ham2') {
+            top: 1.2rem;
+            right: 0.7rem;
+        }
+
         span {
             display: block;
             width: 1.7rem;
@@ -99,7 +190,7 @@ nav {
             padding-bottom: 0.4rem;
             position: relative;
 
-            &:first-child.active{
+            &:first-child.active {
                 position: absolute;
                 top: 0;
                 left: 0.25rem;
@@ -107,21 +198,36 @@ nav {
                 transition: all 0.2s;
             }
 
-            &:last-child.active{
+            &:last-child.active {
                 position: absolute;
                 top: 0;
                 transform: rotate(135deg);
                 transition: all 0.2s;
             }
 
-            &.sRight.active{
+            &.sRight.active {
                 border-color: transparent;
+            }
+
+            @include mediaQ ('ham1') {
+                border-top: 3px solid $primary;
+            }
+            @include mediaQ ('ham2') {
+                border-top: 3px solid $primary;
             }
         }
 
         &:hover .sRight {
             position: relative;
             right: 0.3rem;
+
+            @include mediaQ ('ham1') {
+                position: initial;
+            }
+            @include mediaQ ('ham2') {
+                position: initial;
+            }
+
         }
     }
 }

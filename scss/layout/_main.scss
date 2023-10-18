@@ -1,60 +1,26 @@
 main {
     width: 100%;
-
-    //이미지 호버
-    .img {
-        position: relative;
-        box-sizing: border-box;
-        overflow: hidden;
-        width: inherit;
-        display: block;
-
-        .img-hover {
-            display: none;
-
-            @extend %hoverText;
-            width: 100%;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: $background;
-
-            .img-hover-text p {
-                width: 100%;
-                cursor: pointer;
-                color: $background;
-                text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
-            }
-        }
-
-        .boxS {
-            box-sizing: border-box;
-            overflow: hidden;
-            width: inherit;
-            display: block;
-            height: 100%;
-
-            img:hover {
-                filter: grayscale(100%) brightness(40%);
-                transition: all 0.4s ease-out;
-                scale: 120% 120%;
-                cursor: pointer;
-            }
-        }
-
-
-    }
-
-
+    height: 100%;
+    background: $background;
 
     .inner {
         width: $inner;
-        margin-left: 10vw;
+        margin: auto;
+
+        @include mediaQ ('ham1') {
+            width: 95% !important;
+            margin: auto;
+        }
+        @include mediaQ ('ham2') {
+            width: 95% !important;
+            margin: auto;
+        }
 
         .section1 {
             @extend %section1;
             @extend %section1Img;
+
+
         }
 
         //section1
@@ -122,7 +88,7 @@ main {
             @extend %section1;
             @extend %section1Img;
 
-            height: 60vw !important;
+            height: initial !important;
         }
 
         //section7
@@ -133,6 +99,51 @@ main {
         }
 
         //section8
+    }
+
+    //이미지 호버
+    .img {
+        position: relative;
+        box-sizing: border-box;
+        overflow: hidden;
+        width: inherit;
+        display: block;
+
+        .img-hover {
+            display: none;
+
+            @extend %hoverText;
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $background;
+
+            .img-hover-text p {
+                width: 100%;
+                cursor: pointer;
+                color: $background;
+                text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+            }
+        }
+
+        .boxS {
+            box-sizing: border-box;
+            overflow: hidden;
+            width: inherit;
+            display: block;
+            height: 100%;
+
+            img:hover {
+                filter: grayscale(100%) brightness(40%);
+                transition: all 0.4s ease-out;
+                scale: 120% 120%;
+                cursor: pointer;
+            }
+        }
+
 
     }
+
 }
