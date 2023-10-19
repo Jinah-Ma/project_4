@@ -11,13 +11,29 @@
     backdrop-filter: blur(20px);
     box-shadow: 0px 0px 5px #888;
 
+    @include mediaQ ('ham3') {
+        width: 20rem;
+        height: 20rem;
+    }
+
     .popText {
         margin-top: 4.5rem;
+
+        @include mediaQ ('ham3') {
+            margin-top: 6rem;
+        }
+
         p {
             width: 100%;
             justify-content: center;
             text-align: center;
             font-size: $info1;
+
+            @include mediaQ ('ham3') {
+                width: 95%;
+                margin: auto;
+                line-height: 2;
+            }
         }
     }
 

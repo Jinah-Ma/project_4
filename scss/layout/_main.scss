@@ -15,12 +15,14 @@ main {
             width: 95% !important;
             margin: auto;
         }
+        @include mediaQ ('ham3') {
+            width: 95% !important;
+            margin: auto;
+        }
 
         .section1 {
             @extend %section1;
             @extend %section1Img;
-
-
         }
 
         //section1

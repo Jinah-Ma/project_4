@@ -13,6 +13,9 @@ nav {
     @include mediaQ ('ham2') {
         width: 100% !important;
     }
+    @include mediaQ ('ham3') {
+        width: 100% !important;
+    }
 
     .menu {
         display: flex;
@@ -32,6 +35,10 @@ nav {
             left: 0;
             top: 60px;
         }
+        @include mediaQ ('ham3') {
+            left: 0;
+            top: 60px;
+        }
 
 
         .list {
@@ -42,6 +49,9 @@ nav {
                 width: 100%;
             }
             @include mediaQ ('ham2') {
+                width: 100%;
+            }
+            @include mediaQ ('ham3') {
                 width: 100%;
             }
 
@@ -110,6 +120,21 @@ nav {
                     font-weight: 500;
                 }
             }
+            @include mediaQ ('ham3') {
+                background: none;
+                width: 100%;
+                top: 60px;
+
+                form {
+                    display: none;
+                }
+
+                a {
+                    color: $background;
+                    font-size: $info1;
+                    font-weight: 500;
+                }
+            }
 
 
             .navInner {
@@ -144,6 +169,12 @@ nav {
                    transform: translateX(-50%);
                    
                 }
+                @include mediaQ ('ham3') {
+                   top: 0;
+                   left: 50%;
+                   transform: translateX(-50%);
+                   
+                }
                 
                 .navText {
                     padding-top: 2rem;
@@ -158,6 +189,10 @@ nav {
                         gap: 2rem;
                     }
                     @include mediaQ ('ham2') {
+                        display: flex;
+                        gap: 2rem;
+                    }
+                    @include mediaQ ('ham3') {
                         display: flex;
                         gap: 2rem;
                     }
@@ -179,6 +214,10 @@ nav {
             right: 0.7rem;
         }
         @include mediaQ ('ham2') {
+            top: 1.2rem;
+            right: 0.7rem;
+        }
+        @include mediaQ ('ham3') {
             top: 1.2rem;
             right: 0.7rem;
         }
@@ -215,6 +254,9 @@ nav {
             @include mediaQ ('ham2') {
                 border-top: 3px solid $primary;
             }
+            @include mediaQ ('ham3') {
+                border-top: 3px solid $primary;
+            }
         }
 
         &:hover .sRight {
@@ -225,6 +267,9 @@ nav {
                 position: initial;
             }
             @include mediaQ ('ham2') {
+                position: initial;
+            }
+            @include mediaQ ('ham3') {
                 position: initial;
             }
 

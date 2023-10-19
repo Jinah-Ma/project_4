@@ -23,6 +23,30 @@ footer {
                 padding-top: 1.5rem;
             }
         }
+        @include mediaQ ('ham2') {
+            width: 95%;
+            margin: auto;
+            flex-direction: column;
+            text-align: center;
+            height: 18rem;
+            padding-top: 1rem;
+
+            div{
+                padding-top: 1.5rem;
+            }
+        }
+        @include mediaQ ('ham3') {
+            width: 95%;
+            margin: auto;
+            flex-direction: column;
+            text-align: center;
+            height: 18rem;
+            padding-top: 1rem;
+
+            div{
+                padding-top: 1.5rem;
+            }
+        }
 
         .copy:before,
         .info:before {
@@ -32,6 +56,18 @@ footer {
             position: relative;
 
             @include mediaQ ('ham1') {
+                display: block;
+                width: 5rem;
+                border-top: 1px solid #cccccc !important;
+                font-size: 0;
+            }
+            @include mediaQ ('ham2') {
+                display: block;
+                width: 5rem;
+                border-top: 1px solid #cccccc !important;
+                font-size: 0;
+            }
+            @include mediaQ ('ham3') {
                 display: block;
                 width: 5rem;
                 border-top: 1px solid #cccccc !important;
@@ -47,6 +83,16 @@ footer {
                 transform: translate(-50%);
                 top: 5.5rem;
             }
+            @include mediaQ ('ham2') {
+                left: 50%;
+                transform: translate(-50%);
+                top: 5.5rem;
+            }
+            @include mediaQ ('ham3') {
+                left: 50%;
+                transform: translate(-50%);
+                top: 5.5rem;
+            }
         }
 
         .info:before {
@@ -56,6 +102,16 @@ footer {
                 left: 50%;
                 transform: translate(-50%);
                 top: 5.8rem;
+            }
+            @include mediaQ ('ham2') {
+                left: 50%;
+                transform: translate(-50%);
+                top: 5.8rem;
+            }
+            @include mediaQ ('ham3') {
+                left: 50%;
+                transform: translate(-50%);
+                top: 7rem;
             }
         }
 
@@ -81,6 +137,32 @@ footer {
             }
 
             @include mediaQ ('ham1') {
+                margin: auto;
+                
+                a{
+                    font-size: $info1;
+                    margin-top: 0;
+
+                    img{
+                        width: 20px;
+                        margin-top: 0.4rem;
+                    }
+                }
+            }
+            @include mediaQ ('ham2') {
+                margin: auto;
+                
+                a{
+                    font-size: $info1;
+                    margin-top: 0;
+
+                    img{
+                        width: 20px;
+                        margin-top: 0.4rem;
+                    }
+                }
+            }
+            @include mediaQ ('ham3') {
                 margin: auto;
                 
                 a{
