@@ -346,7 +346,7 @@ header .wrap {
 header .wrap .left {
   width: 10%;
   background: #fff;
-  position: absolute;
+  position: fixed;
 }
 @media screen and (min-width: 780px) and (max-width: 999px) {
   header .wrap .left {

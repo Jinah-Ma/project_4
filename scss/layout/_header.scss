@@ -9,7 +9,7 @@ header {
         .left {
             width: $nav;
             background: $background;
-            position: absolute;
+            position: fixed;
 
             @include mediaQ ('ham1') {
                 width: 100%;
