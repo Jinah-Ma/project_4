@@ -673,6 +673,9 @@ main .inner {
     margin: auto;
   }
 }
+main .inner .section1 h2, main .inner .section2 h2, main .inner .section3 h2, main .inner .section4 h2, main .inner .section5 h2, main .inner .section6 h2, main .inner .section7 h2, main .inner .section8 h2 {
+  display: none;
+}
 main .inner .section4 .img9 span {
   display: block;
 }

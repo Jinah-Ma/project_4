@@ -20,6 +20,10 @@ main {
             margin: auto;
         }
 
+        .section1, .section2,.section3,.section4,.section5,.section6,.section7,.section8{
+            h2{display: none;}
+        }
+
         .section1 {
             @extend %section1;
             @extend %section1Img;
