@@ -29,6 +29,7 @@ https://drive.google.com/file/d/10kgiCGQ9jfvOjEU1AhWGEX0dZJ47SDB0/view?usp=drive
 
 ## 특징
 - SCSS project
+- 반응형
 
 ## 브라우저 호환성
 - Chrome
