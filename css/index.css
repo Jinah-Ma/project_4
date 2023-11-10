@@ -918,6 +918,12 @@ footer .inner .sns a img {
     margin-top: 0.4rem;
   }
 }
+footer .test {
+  width: 80%;
+  margin-left: 10vw;
+  background-color: #fafafa;
+  text-align: center;
+}
 
 main .inner .section2 .img-text span:not(:last-child), main .inner .section4 .img-text span:not(:last-child), main .inner .section6 .img-text span:not(:last-child), main .inner .section8 .img-text span:not(:last-child), main .inner .section1 .img-text span:not(:last-child), main .inner .section3 .img-text span:not(:last-child), main .inner .section5 .img-text span:not(:last-child), main .inner .section7 .img-text span:not(:last-child), header .wrap .banner .b-img-text-inner span:not(:last-child) {
   font-style: italic;
