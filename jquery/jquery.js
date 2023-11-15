@@ -35,3 +35,10 @@ img.on('mouseenter', function () {
 img.on('mouseleave', function () {
     $(this).find('.img-hover').fadeOut(400);
 })
+
+//스크롤 lock구현
+const hamBtn = $('.ham');
+
+hamBtn.on('click', function(){
+    
+})
